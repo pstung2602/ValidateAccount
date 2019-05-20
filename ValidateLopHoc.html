@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let ClassRegularExp = function (str) {
+        let repexp = /^[ACP]+[0-9]{4}[GHIKLM]/;
+        if(repexp.test(str)){
+            return str + " la ten la top hoc"+"<br>";
+        }else {
+            return str + " khong la ten lop hoc"+"<br>";
+        }
+    };
+    let class1="C0018M";
+    let class2="M0318G";
+    document.write(ClassRegularExp(class1));
+    document.write(ClassRegularExp(class2));
+</script>
+
+</body>
+</html>
